@@ -66,12 +66,9 @@ cd ../classification_cbam
 python train_cbam_mobilenet.py
 See the respective README.md files in each subfolder for detailed instructions.
 
-📜 **Citation**
-If you use this work, please cite:
-
 ## Pretrained Weights
 We have not included trained weights in this repository to avoid large file storage. Please contact the corresponding author to request pretrained weights.
 
-
-
+📜 **Citation**
+If you use this work, please cite:
 Sudhesh K M et al., "RCAMNet: Segmentation-driven Dual-path Attention Framework for Rice BLB Severity Analysis", 2025.
