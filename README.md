@@ -1,3 +1,9 @@
+## Getting Started
+
+### Install dependencies
+```bash
+pip install -r requirements.txt
+
 **RCAMNet: Rice BLB Severity Analysis with Dual-Path Attention and Segmentation**
 🌾 **What is RCAMNet?**
 RCAMNet is a novel multi-task deep learning framework for accurate classification and severity analysis of BLB.
