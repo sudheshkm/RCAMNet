@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pkl
+*.pth
+*.ckpt
+*.pt
+*.log
+output/
+datasets/
+.vscode/
+.idea/
+*.ipynb_checkpoints
