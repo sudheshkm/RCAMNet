@@ -1,12 +1,25 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pkl
-*.pth
-*.ckpt
-*.pt
-*.log
-output/
-datasets/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# VS Code / IDEs
 .vscode/
 .idea/
-*.ipynb_checkpoints
+
+# MacOS
+.DS_Store
+
+# PyTorch Lightning or similar logs
+lightning_logs/
