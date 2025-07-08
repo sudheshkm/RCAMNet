@@ -69,4 +69,9 @@ See the respective README.md files in each subfolder for detailed instructions.
 📜 **Citation**
 If you use this work, please cite:
 
+## Pretrained Weights
+We have not included trained weights in this repository to avoid large file storage. Please contact the corresponding author to request pretrained weights.
+
+
+
 Sudhesh K M et al., "RCAMNet: Segmentation-driven Dual-path Attention Framework for Rice BLB Severity Analysis", 2025.
