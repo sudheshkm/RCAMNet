@@ -4,14 +4,42 @@
 ```bash
 pip install -r requirements.txt
 
-**RCAMNet: Rice BLB Severity Analysis with Dual-Path Attention and Segmentation**
-🌾 **What is RCAMNet?**
-RCAMNet is a novel multi-task deep learning framework for accurate classification and severity analysis of BLB.
-It integrates segmentation-driven feature enhancement with a lightweight, attention-augmented classifier to achieve robust and interpretable predictions.
+This version:
+# Paddy Pathologist: Multimodal Fusion for Rice Bacterial Leaf Blight Severity Assessment 🌾
 
-📋 **Key Features**
+## What is this repository?
 
-✅ **Multi-class segmentation to isolate diseased regions:**
+This repository contains the source code associated with the research work:
+
+**"Multimodal Fusion of Visual and Lesion Features for Mobile-Based Severity Assessment of Rice Bacterial Leaf Blight"**
+
+The work presents a multimodal framework for stage-wise assessment of Bacterial Leaf Blight (BLB) severity in rice. The framework combines learned visual features with structured lesion descriptors to support severity classification and mobile deployment.
+
+The pipeline integrates lightweight rice leaf segmentation, HSV-based lesion masking, MobileNetV2 with CBAM attention, handcrafted lesion descriptors, and feature-level multimodal fusion.
+
+## Key Features
+
+- 🌱 **Lightweight leaf segmentation** using U-Net
+- 🎨 **HSV-based lesion masking** for extracting disease-affected regions
+- 🧠 **MobileNetV2 with CBAM** for visual feature extraction
+- 📊 **Structured lesion descriptors** representing lesion area, colour, and texture characteristics
+- 🔗 **Feature-level multimodal fusion** of visual and lesion descriptors
+- 📱 **TensorFlow Lite deployment** for on-device inference
+- 🌾 **Stage-wise BLB severity assessment** across five severity stages
+- 🔍 **Grad-CAM-based interpretability** for visual analysis of model predictions
+
+## Framework
+
+The proposed pipeline consists of the following major stages:
+
+1. Input rice leaf image
+2. Rice leaf segmentation using lightweight U-Net
+3. HSV-based lesion-mask generation
+4. Visual feature extraction using MobileNetV2 with CBAM
+5. Extraction of structured lesion descriptors
+6. Feature-level multimodal fusion
+7. Five-stage BLB severity classification
+8. TensorFlow Lite conversion for mobile deployment
 
 
 Detectron2 is preferred for its instance segmentation capability.
@@ -72,9 +100,65 @@ cd ../classification_cbam
 python train_cbam_mobilenet.py
 See the respective README.md files in each subfolder for detailed instructions.
 
-## Pretrained Weights
-We have not included trained weights in this repository to avoid large file storage. Please contact the corresponding author to request pretrained weights.
+## Framework
 
-📜 **Citation**
-If you use this work, please cite:
-Sudhesh K M et al., "RCAMNet: Segmentation-driven Dual-path Attention Framework for Rice BLB Severity Analysis", 2025.
+The proposed pipeline consists of the following major stages:
+
+1. Input rice leaf image
+2. Rice leaf segmentation using lightweight U-Net
+3. HSV-based lesion-mask generation
+4. Visual feature extraction using MobileNetV2 with CBAM
+5. Extraction of structured lesion descriptors
+6. Feature-level multimodal fusion
+7. Five-stage BLB severity classification
+8. TensorFlow Lite conversion for mobile deployment
+
+## Dataset
+
+The experiments use **BLBVisionDB**, a rice Bacterial Leaf Blight progression dataset introduced in our previous work.
+
+Dataset information is available through the project webpage:
+
+https://sudheshkm.github.io/Bacterial-Leaf-Blight-disease-progression/
+
+The dataset is available from the corresponding author upon reasonable request.
+
+## Model Weights
+
+The trained model weights used for inference are available from the corresponding author upon reasonable request.
+
+For requests regarding the dataset or model weights, please contact the corresponding author.
+
+## Mobile Application
+
+The trained models were integrated into the **Paddy Pathologist** Android application for on-device rice disease assessment.
+
+The application supports:
+
+- Automatic leaf detection
+- Manual image capture
+- Gallery-based analysis
+- BLB severity assessment
+- Multilingual user interface
+- Stage-wise remedial recommendations
+- Agricultural officer communication through SMS
+
+The severity assessment model described in the associated manuscript focuses specifically on **Bacterial Leaf Blight**, based on the stage-labelled BLB dataset used in this study.
+
+## Repository Scope
+
+This repository is associated with the multimodal BLB severity assessment work described in the manuscript above.
+
+The repository name **RCAMNet** is retained for continuity with the earlier implementation and previous work. The present study extends that earlier visual framework by incorporating structured lesion descriptors and multimodal feature fusion.
+
+## Citation
+
+If you use the methodology, source code, or related work from this repository, please cite:
+
+Sudhesh K M, Aarthi R, Sainamole Kurian P, Sikha O K.
+
+**"Multimodal Fusion of Visual and Lesion Features for Mobile-Based Severity Assessment of Rice Bacterial Leaf Blight."**
+
+## Contact
+
+For access to the BLBVisionDB dataset or trained model weights, please contact the corresponding author.
