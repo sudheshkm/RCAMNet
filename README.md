@@ -113,6 +113,13 @@ The proposed pipeline consists of the following major stages:
 7. Five-stage BLB severity classification
 8. TensorFlow Lite conversion for mobile deployment
 
+
+## Code availability
+
+The code is archived in Zenodo and is associated with the GitHub
+repository through a versioned release.
+
+
 ## Dataset
 
 The experiments use **BLBVisionDB**, a rice Bacterial Leaf Blight progression dataset introduced in our previous work.
